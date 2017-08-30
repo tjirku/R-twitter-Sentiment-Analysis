@@ -4,7 +4,7 @@ library(wordcloud)
 library(twitteR)
 shinyServer(function(input, output, session) {
   
-  setup_twitter_oauth(consumer_key = "AkyUraAbGFK1qDNhQS3GFiYYS", consumer_secret = "LLQmVWliiGZD5Y2rqLik8kETGsBsxeiVEctraOEwfYEv7jzs3d")
+  setup_twitter_oauth(consumer_key = "YOUR TWITTER CONSUMER KEY HERE", consumer_secret = "YOUR TWITTER CONSUMER SECRET HERE")
   
   token <- get("oauth_token", twitteR:::oauth_cache)
   token$cache()
